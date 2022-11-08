@@ -63,5 +63,9 @@ void quick_sort(int *array, size_t size)
 
 	first_element = 0;
 	last_element = size - 1;
+	if (array == NULL || size == 0)
+	{
+		return;
+	}
 	partition_sort(array, first_element, last_element, size);
 }
