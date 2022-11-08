@@ -32,7 +32,7 @@ int partition(int *array, int low, int high, size_t size)
 
 
 /**
- * partion_sort - sorts array.
+ * partition_sort - sorts array.
  * @array: list of numbers
  * @low: first index of array
  * @high: last index of array
