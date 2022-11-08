@@ -32,7 +32,7 @@ int partition(int *array, int low, int high, size_t size)
 
 
 /**
- * partion_sort - sorts array.
+ * partition_sort - sorts array.
  * @array: list of numbers
  * @low: first index of array
  * @high: last index of array
@@ -63,5 +63,9 @@ void quick_sort(int *array, size_t size)
 
 	first_element = 0;
 	last_element = size - 1;
+	if (array == NULL || size == 0)
+	{
+		return;
+	}
 	partition_sort(array, first_element, last_element, size);
 }
