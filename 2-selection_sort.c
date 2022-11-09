@@ -23,10 +23,13 @@ void selection_sort(int *array, size_t size)
 					num = x;
 				}
 			}
-			temp = array[i];
-			array[i] = array[num];
-			array[num] = temp;
-			print_array(array, size);
+			if (num != i)
+			{
+				temp = array[i];
+				array[i] = array[num];
+				array[num] = temp;
+				print_array(array, size);
+			}
 		}
 	}
 	else
